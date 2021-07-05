@@ -28,6 +28,12 @@ public class PersonController {
 
     private PersonService personService;
 
+    @GetMapping
+    public String getBook(){
+        return "API Test!";
+    }
+/*
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public MessageResponseDTO createPerson(@RequestBody @Valid PersonDTO personDTO) {
@@ -54,4 +60,5 @@ public class PersonController {
     public void deleteById(@PathVariable Long id) throws PersonNotFoundException {
         personService.delete(id);
     }
+*/
 }
